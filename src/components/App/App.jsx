@@ -4,7 +4,7 @@ import ContactList from "../ContactList/ContactList";
 import Loader from "../Loader/Loader";
 import { useDispatch, useSelector } from "react-redux";
 import { useEffect } from "react";
-import { selectIsLoading, selectError } from "../../redux/selectors";
+import { selectIsLoading, selectError } from "../../redux/auth/selectors";
 import { fetchContacts } from "../../redux/contactsOps";
 import ErrorMessage from "../ErrorMessage/ErrorMessage";
 

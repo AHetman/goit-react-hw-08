@@ -1,7 +1,7 @@
 import Contact from "../Contact/Contact";
 import { nanoid } from "nanoid";
 import { useSelector } from "react-redux";
-import { selectFilteredContacts } from "../../redux/selectors";
+import { selectFilteredContacts } from "../../redux/auth/selectors";
 
 import css from "./ContactList.module.css";
 
