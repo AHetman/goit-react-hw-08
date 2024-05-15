@@ -1,0 +1,16 @@
+.searchBoxInput {
+  border: 1px solid black;
+  border-radius: 5px;
+  font-size: 16px;
+  margin-bottom: 10px;
+  padding: 4px;
+  width: 320px;
+  margin-top: 0;
+  padding-left: 8px;
+}
+.searchBoxInput:hover {
+  border: 2px solid black;
+}
+.searchBoxLabel {
+  margin: 20px 0 5px 0;
+}

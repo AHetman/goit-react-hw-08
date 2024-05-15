@@ -1,6 +1,17 @@
-.contactForm {
+.formItem {
+  display: flex;
+  flex-direction: row;
+}
+.label {
   display: flex;
   flex-direction: column;
+}
+.registerForm {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 70%;
+  left: 35%;
 }
 .formField {
   border: 1px solid black;
@@ -14,17 +25,15 @@
 .formField:hover {
   border: 2px solid black;
 }
-.button {
+.submitButton {
   font-size: 14px;
   font-weight: 500;
   background-color: rgb(85, 197, 228);
   border: 1px solid black;
+  margin: 10px 0 0 0;
 }
-.button:hover {
+
+.submitButton:hover {
   background-color: rgb(7, 86, 143);
   border: 2px solid black;
-}
-.contactForm > .errorMessage {
-  font-size: 10px;
-  color: rgb(149, 149, 149);
 }

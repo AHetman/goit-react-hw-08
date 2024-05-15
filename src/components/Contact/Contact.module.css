@@ -1,31 +1,15 @@
-.contact {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
-  padding: 8px;
-  border: 1px solid #000;
-  border-radius: 5px;
-  width: 250px;
+.contactDelBtn {
+  margin: auto;
+  background-color: rgb(85, 197, 228);
+  border: 1px solid black;
+  font-size: 14px;
+  color: rgb(0, 0, 0);
 }
-
-.dataContact {
-  display: flex;
-  flex-direction: column;
-  gap: 5px;
+.contactDelBtn:hover {
+  background-color: rgb(7, 86, 143);
+  border: 2px solid rgb(46, 44, 42);
 }
-
-.text {
-  margin-bottom: 4px;
+.contactName {
   margin-top: 4px;
-}
-
-.btn {
-  display: flex;
-  flex-direction: row;
-  width: auto;
-  height: 40px;
-  border: 2px solid rgb(49, 45, 45);
-  border-radius: 4px;
-  background-color: rgb(223, 222, 222);
+  margin-bottom: 4px;
 }

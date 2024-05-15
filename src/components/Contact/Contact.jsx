@@ -1,32 +1,30 @@
-import css from "./Contact.module.css";
-import { TbPhoneFilled } from "react-icons/tb";
-import { TbUserFilled } from "react-icons/tb";
+import { TiUser } from "react-icons/ti";
+import { TiPhone } from "react-icons/ti";
 import { useDispatch } from "react-redux";
-import { deleteContact } from "../../redux/contactsOps";
+import { deleteContact } from "../../redux/contacts/operations";
 
-const Contact = ({ id, name, number }) => {
+import css from "./Contact.module.css";
+
+const Contact = ({ name, number, id }) => {
   const dispatch = useDispatch();
 
   const handleDelete = () => dispatch(deleteContact(id));
-
   return (
-    <div className={css.contact}>
-      <div className={css.dataContact}>
-        <p className={css.text}>
-          <TbUserFilled />
+    <div className={css.ContactContainer}>
+      <div>
+        <p className={css.contactName}>
+          <TiUser />
           {name}
         </p>
-
-        <p className={css.text}>
-          <TbPhoneFilled />
+        <p className={css.contactName}>
+          <TiPhone />
           {number}
         </p>
       </div>
-      <button className={css.btn} onClick={() => handleDelete(id)}>
+      <button className={css.contactDelBtn} onClick={() => handleDelete(id)}>
         Delete
       </button>
     </div>
   );
 };
-
 export default Contact;

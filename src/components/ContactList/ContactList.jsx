@@ -1,17 +1,15 @@
-import Contact from "../Contact/Contact";
-import { nanoid } from "nanoid";
-import { useSelector } from "react-redux";
-import { selectFilteredContacts } from "../../redux/auth/selectors";
-
 import css from "./ContactList.module.css";
+import Contact from "../Contact/Contact";
+import { useSelector } from "react-redux";
+import { selectFilteredContacts } from "../../redux/filters/selectors";
 
 const ContactList = () => {
   const filteredContacts = useSelector(selectFilteredContacts);
 
   return (
-    <ul className={css.contactList}>
+    <ul className={css.contactsList}>
       {filteredContacts.map((contact) => (
-        <li className={css.contactItem} key={nanoid}>
+        <li className={css.contactsItem} key={contact.id}>
           <Contact
             name={contact.name}
             number={contact.number}
@@ -22,5 +20,4 @@ const ContactList = () => {
     </ul>
   );
 };
-
 export default ContactList;

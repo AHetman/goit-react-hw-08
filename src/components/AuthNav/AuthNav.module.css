@@ -1,0 +1,12 @@
+.authNavigationContainer {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+}
+.authNavigationLink {
+  color: black;
+}
+.authNavigationLink:hover {
+  transform: scale(1.2);
+  color: rgb(7, 86, 143);
+}

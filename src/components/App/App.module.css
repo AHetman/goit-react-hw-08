@@ -1,11 +1,5 @@
-.container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin: 20px 150px;
-  padding: 0 50px 50px 50px;
-  border: 2px solid black;
-  border-radius: 8px;
-  background-color: rgb(181, 224, 243);
+.loader {
+  position: absolute;
+  top: 10%;
+  left: 50%;
 }
