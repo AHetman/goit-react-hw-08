@@ -70,16 +70,13 @@ const HomePage = () => {
                 color: "inherit",
                 padding: "10px 20px",
                 backgroundColor: isHoveredLog
-                  ? "rgb(229, 94, 22)"
-                  : "rgb(228, 135, 85)",
+                  ? "rgb(7, 86, 143)"
+                  : "rgb(85, 197, 228)",
                 border: "1px solid black",
                 borderRadius: "20px",
                 fontSize: "1.2rem",
                 fontWeight: "bold",
                 cursor: "pointer",
-                boxShadow: isHoveredLog
-                  ? "0px 0px 8px 4px rgb(88, 80, 87)"
-                  : "none",
                 transform: isHoveredLog ? "scale(1.1)" : "none",
               }}
               onMouseEnter={handleMouseEnterLog}
@@ -93,17 +90,14 @@ const HomePage = () => {
                 textDecoration: "none",
                 color: "black",
                 backgroundColor: isHoveredReg
-                  ? "rgb(229, 94, 22)"
-                  : "rgb(228, 135, 85)",
+                  ? "rgb(7, 86, 143)"
+                  : "rgb(85, 197, 228)",
                 padding: "10px 20px",
                 borderRadius: "20px",
                 fontSize: "1.2rem",
                 fontWeight: "bold",
                 cursor: "pointer",
                 border: "1px solid black",
-                boxShadow: isHoveredReg
-                  ? "0px 0px 8px 4px rgb(88, 80, 87)"
-                  : "none",
                 transform: isHoveredReg ? "scale(1.1)" : "none",
               }}
               onMouseEnter={handleMouseEnterReg}
